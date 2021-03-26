@@ -32,13 +32,189 @@
             <div class="panel panel-default">
               <div class="panel-heading">Filter Search</div>
               <div class="panel-body">
-                <form>
+                <form id="form">
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                      </li>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/5/2010"></li>
+                        <li class="filter list-group-item">
+                          <label for="city">Select a City</label>
+                          <select class="form-control" id="city" placeholder="">
+                            <option>ackerman</option>
+                            <option>albuquerque</option>
+                            <option>alma</option>
+                            <option>anchorage</option>
+                            <option>anderson</option>
+                            <option>antioch</option>
+                            <option>aspen</option>
+                            <option>atlanta</option>
+                            <option>baker</option>
+                            <option>bakersfield</option>
+                            <option>ben wheeler</option>
+                            <option>benton</option>
+                            <option>boca raton</option>
+                            <option>bonita</option>
+                            <option>boulder</option>
+                            <option>buffalo</option>
+                            <option>butler</option>
+                            <option>cary</option>
+                            <option>cedar rapids</option>
+                            <option>ceres</option>
+                            <option>chula vista</option>
+                            <option>cincinnati</option>
+                            <option>cleveland</option>
+                            <option>clinton</option>
+                            <option>colonia</option>
+                            <option>crestview</option>
+                            <option>deep run</option>
+                            <option>edgartown</option>
+                            <option>el cajon</option>
+                            <option>eugene</option>
+                            <option>eunice</option>
+                            <option>fairfield</option>
+                            <option>falcon</option>
+                            <option>fayetteville</option>
+                            <option>fort myers</option>
+                            <option>fort worth</option>
+                            <option>francis creek</option>
+                            <option>freedom (watsonville)</option>
+                            <option>fresno</option>
+                            <option>glen spey</option>
+                            <option>grants pass</option>
+                            <option>gulf breeze</option>
+                            <option>hancock</option>
+                            <option>haverhill</option>
+                            <option>ingleside (canada)</option>
+                            <option>jasper</option>
+                            <option>joplin</option>
+                            <option>la mesa</option>
+                            <option>lakeland</option>
+                            <option>leatherwood</option>
+                            <option>lemon grove</option>
+                            <option>lompoc</option>
+                            <option>london (canada)</option>
+                            <option>loveland</option>
+                            <option>madison</option>
+                            <option>mansfield</option>
+                            <option>maricopa</option>
+                            <option>mason</option>
+                            <option>middleburg</option>
+                            <option>naples</option>
+                            <option>national city</option>
+                            <option>new paltz</option>
+                            <option>norton</option>
+                            <option>orange</option>
+                            <option>pacific palisades</option>
+                            <option>paducah</option>
+                            <option>park city</option>
+                            <option>pasadena</option>
+                            <option>phoenix</option>
+                            <option>port saint lucie</option>
+                            <option>pratt</option>
+                            <option>princeton</option>
+                            <option>reedville</option>
+                            <option>rockwell</option>
+                            <option>round rock</option>
+                            <option>sacramento</option>
+                            <option>saline</option>
+                            <option>san diego</option>
+                            <option>san jacinto</option>
+                            <option>san pablo</option>
+                            <option>santa fe springs</option>
+                            <option>searcy</option>
+                            <option>seattle</option>
+                            <option>southampton</option>
+                            <option>spring valley</option>
+                            <option>springfield</option>
+                            <option>st. louis</option>
+                            <option>taunton</option>
+                            <option>tomball</option>
+                            <option>tularosa</option>
+                            <option>uxbridge</option>
+                            <option>walworth</option>
+                            <option>waukesha</option>
+                            <option>waxhaw</option>
+                            <option>west boylston</option>
+                            <option>westbrook</option>
+                            <option>white oak</option>
+                            <option>whittier</option>
+                            <option>wichita</option>
+                            <option>willow</option>
+                            <option>windham</option>
+                            <option>woodbridge</option>
+                          </select>
+                          </li>
+                          <li class="filter list-group-item">
+                            <label for="state">Select a State</label>
+                            <select class="form-control" id="state" placeholder="">
+                              <option>ak</option>
+                              <option>al</option>
+                              <option>ar</option>
+                              <option>az</option>
+                              <option>ca</option>
+                              <option>co</option>
+                              <option>ct</option>
+                              <option>fl</option>
+                              <option>ga</option>
+                              <option>ia</option>
+                              <option>in</option>
+                              <option>ks</option>
+                              <option>ky</option>
+                              <option>la</option>
+                              <option>ma</option>
+                              <option>md</option>
+                              <option>mi</option>
+                              <option>mo</option>
+                              <option>ms</option>
+                              <option>nc</option>
+                              <option>nh</option>
+                              <option>nj</option>
+                              <option>nm</option>
+                              <option>ny</option>
+                              <option>oh</option>
+                              <option>on</option>
+                              <option>or</option>
+                              <option>pa</option>
+                              <option>sc</option>
+                              <option>tn</option>
+                              <option>tx</option>
+                              <option>va</option>
+                              <option>wa</option>
+                              <option>wi</option>
+                              <option>wv</option>
+                              </select></li>
+                        <li class="filter list-group-item">
+                          <label for="country">Select a Country</label>
+                          <select class="form-control" id="country" placeholder="">
+                            <option>us</option>
+                            <option>ca</option>
+                            </select>
+                          </li>
+                        <li class="filter list-group-item">
+                          <label for="shape">Select a Shape</label>
+                          <select class="form-control" id="shape" placeholder="">
+                            <option>circle</option>
+                            <option>light</option>
+                            <option>triangle</option>
+                            <option>unknown</option>
+                            <option>fireball</option>
+                            <option>formation</option>
+                            <option>other</option>
+                            <option>sphere</option>
+                            <option>disk</option>
+                            <option>chevron</option>
+                            <option>rectangle</option>
+                            <option>cross</option>
+                            <option>flash</option>
+                            <option>changing</option>
+                            <option>oval</option>
+                            <option>cigar</option>
+                            <option>teardrop</option>
+                            <option>cylinder</option>
+                            </select>
+                          </li>
+                          
                     </ul>
                   </div>
                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
